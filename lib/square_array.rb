@@ -1,10 +1,5 @@
 def square_array(array)
-  counter = 0
-
-  while counter<array.length do
-    square_array=[]
-    square_array[counter] = array[counter]**2
-    counter++
-  end
-  return square_array
+  new_array = []
+  array.each{|a| new_array.push(a*a)}
+  return new_array
 end
